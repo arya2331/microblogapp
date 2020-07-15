@@ -25,6 +25,21 @@
           Username is required
         </p>
       </ion-text>
+      <ion-item>
+        <ion-label position="stacked" color="primary">First Name</ion-label>
+        <ion-input [(ngModel)]="signup.firstname" name="firstname" type="text" #firstname="ngModel" required>
+        </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked" color="primary">Last Name</ion-label>
+        <ion-input [(ngModel)]="signup.lastname" name="lastname" type="text" #lastname="ngModel" required>
+        </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked" color="primary">Email</ion-label>
+        <ion-input [(ngModel)]="signup.email" name="email" type="email" #email="ngModel" required>
+        </ion-input>
+      </ion-item>
 
       <ion-item>
         <ion-label position="stacked" color="primary">Password</ion-label>
